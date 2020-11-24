@@ -65,7 +65,7 @@ class NewMarket extends React.Component {
 
         </div>
 
-        <Dialog title="Creat nuevo changarro" visible={this.state.addMarketDialog} onCancel={() => this.setState({addMarketDialog:false})} size="large" customClass="dialog">
+        <Dialog title="Crear nuevo changarro" visible={this.state.addMarketDialog} onCancel={() => this.setState({addMarketDialog:false})} size="large" customClass="dialog">
           <Dialog.Body>
             <Form labelPosition="top">
               <Form.Item label="Ingresar el nombre del changarro">
