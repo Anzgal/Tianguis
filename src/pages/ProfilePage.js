@@ -11,7 +11,7 @@ const getUser = /* GraphQL */ `
       username
       email
       registered
-      orders(sortDirection: DESC, limil:999) {
+      orders(sortDirection: DESC) {
         items {
           id
           createdAt
