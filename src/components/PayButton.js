@@ -61,7 +61,7 @@ const PayButton = ({product, user, userAttributes}) => {
         const order = await API.graphql(graphqlOperation(creteOrder, {input}))
         console.log({order});
         Notification({
-          title: "Success",
+          title: "Éxito",
           message: `${result.message}`,
           type: 'success',
           duration: 3000
@@ -79,6 +79,7 @@ const PayButton = ({product, user, userAttributes}) => {
   return (
     <StripeCheckout token={handleCharge} name={product.description} amount={product.price} billingAddress={product.shipped } locale="auto" allowRememberMe={false} shippingAddress={product.shipped} email={userAttributes.email} currency={stripeConfig.currency} stripeKey={stripeConfig.publishableAPIKey} />
   );
+
 };
 
 export default PayButton;
