@@ -2,7 +2,6 @@
 
 # Amplify
 amplify
-.graphqlconfig.yml
 .amplifyrc
 
 # dependencies
